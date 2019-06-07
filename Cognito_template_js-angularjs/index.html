@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>AWS Cognito Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div ui-view></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://rawgit.com/bsalex/angular-loading-overlay/master/dist/angular-loading-overlay.js"></script>
+
+    <!-- AWS Cognito -->
+    <script src="https://rawgit.com/aws/amazon-cognito-identity-js/master/dist/aws-cognito-sdk.min.js"></script>
+    <script src="https://rawgit.com/aws/amazon-cognito-identity-js/master/dist/amazon-cognito-identity.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.6.10.min.js"></script>
+
+    <!-- App -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/signup.js"></script>
+    <script src="scripts/forgotpassword.js"></script>
+    <script src="scripts/resetpassword.js"></script>
+    <script src="scripts/changepassword.js"></script>
+    <script src="scripts/activate.js"></script>
+    <script src="scripts/editprofile.js"></script>
+    <script src="scripts/verifyattribute.js"></script>
+    <script src="scripts/forgotusername.js"></script>
+    <script src="scripts/contents.js"></script>
+</body>
+
+</html>

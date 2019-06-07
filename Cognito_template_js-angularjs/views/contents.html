@@ -1,0 +1,21 @@
+<div class="contents">
+    <a ng-click="logout()">Log out</a>
+    <h1>Welcome, {{profile.username}}</h1>
+
+    <p>In bucket met access</p>
+    <img src="{{urlsrc1}}" style="height: 100px" />
+
+    <p>In ander bucket waarna jy nie access het nie</p>
+    <img src="{{urlsrc2}}" style="height: 100px" />
+
+    <p>In ander bucket waarna jy nie access het nie</p>
+    <img src="{{urlsrc3}}" style="height: 100px" />
+
+    <button ng-click="toetsButton1()" title="Net admin user kan hierdie Lambda invoke">Test button 1</button>
+
+    <button ng-click="toetsButton2()" title="Net klient user kan hierdie Lambda invoke">Test button 2</button>
+
+    <button ng-click="refreshSession()">Refresh session / token</button>
+
+    <div id="errorMessage" class="alert alert-danger col-sm-12" ng-show="errorMessage">{{errorMessage}}</div>
+</div>

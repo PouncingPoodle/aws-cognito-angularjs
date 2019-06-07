@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+}
+
+div.container {
+    height: 100%;
+}
+
+.required:after {
+    content:" *";
+    color: #ff0000;
+}
+
+#loginPanel {
+    margin-top: 50px;
+}
+
+#loginPanel .panel {
+    max-width: 600px;
+}
+
+#loginPanel .panel-body {
+    padding-top: 30px;
+}
+
+#loginPanel .forgotPassword {
+    float:right;
+    position: relative;
+    top:-10px;
+}
+
+#loginPanel .signup {
+    border-top: 1px solid#888;
+    padding-top:15px;
+}
+
+#loginAlert {
+    display: none;
+}
+
+#loginForm .input-group, .form-group, .button-group {
+    margin-bottom: 25px;
+}

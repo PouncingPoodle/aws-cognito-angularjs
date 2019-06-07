@@ -1,0 +1,29 @@
+<div id="verifyPanel" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div class="panel-title">Verify</div>
+        </div>
+
+        <div class="panel-body">
+            <div id="errorMessage" class="alert alert-danger col-sm-12" ng-show="errorMessage">{{errorMessage}}</div>
+            <form id="verifyForm" role="form">
+                <div class="form-group input-group-lg">
+                    <label>Verify</label>
+                    <select ng-model="verifyitem">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                </div>
+                <div class="form-group input-group-lg">
+                    <label for="verificationcode">Activation code</label>
+                    <input id="verificationcode" type="password" class="form-control" placeholder="" autocomplete="off">
+                </div>
+                <div class="button-group">
+                    <button id="verifyBtn" type="submit" class="btn btn-primary btn-lg btn-block" ng-click="submit()">Activate</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

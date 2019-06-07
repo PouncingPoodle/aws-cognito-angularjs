@@ -1,0 +1,22 @@
+<div id="forgotusernamePanel" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div class="panel-title">Forgot username</div>
+        </div>
+
+        <div class="panel-body">
+            <div id="errorMessage" class="alert alert-danger col-sm-12" ng-show="errorMessage">{{errorMessage}}</div>
+            <form id="loginForm" role="form">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="email" type="text" class="form-control" value="" placeholder="E-mail">
+                </div>
+                <div class="button-group">
+                    <button id="forgotusernameBtn" type="submit" class="btn btn-primary btn-lg btn-block" ng-click="submit()">Get username</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
